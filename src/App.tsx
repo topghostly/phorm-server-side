@@ -9,13 +9,13 @@ const App: React.FC = () => {
     <BrowserRouter>
       <div className="text-body font-body">
         <Routes>
-          <Route element={<LandingPage />} path="/"/>
-          <Route element={<Login />} path="/login"/>
-          <Route element={<Register />} path="/create-acct"/>
+          <Route element={<LandingPage />} path="/" />
+          <Route element={<Login />} path="/login" />
+          <Route element={<Register />} path="/create-acct" />
         </Routes>
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
