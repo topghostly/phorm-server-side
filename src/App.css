@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Poppins-Semibold";
+    src: url(./assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+:root{
+    --primary: rgb(17, 30, 60);
+    --background: #f0f0f5;
+    font-family: 'Manrope';
+    background-color: var(--background);
+}
+p{
+    font-weight: 500;
+    font-size: 17px;
+    color: var(--primary);
+}
