@@ -7,7 +7,7 @@ import Register from "./pages/auth/Registration";
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <div className="text-body font-body">
+      <div className="text-body font-body div">
         <Routes>
           <Route element={<LandingPage />} path="/" />
           <Route element={<Login />} path="/login" />
