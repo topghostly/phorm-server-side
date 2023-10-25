@@ -1,19 +1,16 @@
-import React from 'react'
-import Hero from './Hero'
-import isAuthenticated from '../utils/isAuthenticated'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import Hero from "./Hero";
+import TrustedSection from "../components/TrustedSection";
+import TextPicBlockTwo from "../components/TextPicBlock/TextPicBlockTwo";
 
-const LandingPage: React.FC=()=> {
-  const navigate = useNavigate() 
+const LandingPage: React.FC = () => {
   return (
-    <>
-      {isAuthenticated() ?
-      <Hero/> 
-      :
-      navigate('/login')
-      }
-    </>
-  )
-}
+    <div className="flex__box">
+      <Hero />
+      <TrustedSection />
+      <TextPicBlockTwo />
+    </div>
+  );
+};
 
-export default LandingPage
+export default LandingPage;

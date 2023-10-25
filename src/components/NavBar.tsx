@@ -1,7 +1,7 @@
 import logoSvg from "../assets/images/phorm-01.svg";
 import ImageRaft from "./ImageRaft";
 import { LogoSVG } from "../assets/styles/NavBarstyles";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   return (
@@ -13,18 +13,27 @@ const NavBar: React.FC = () => {
         </div>
 
         <div className="flex justify-between gap-5 items-center">
-          <a href="#" className="text-sm font-bold hover:text-gray-300 text-slate-800">
+          <a
+            href="#"
+            className="text-sm font-bold hover:text-gray-300 text-slate-800"
+          >
             Templates
           </a>
-          <a href="#" className="text-sm font-bold hover:text-gray-300 text-slate-800">
+          <a
+            href="#"
+            className="text-sm font-bold hover:text-gray-300 text-slate-800"
+          >
             Components
           </a>
-          <a href="#" className="text-sm font-bold hover:text-gray-300 text-slate-800">
+          <a
+            href="#"
+            className="text-sm font-bold hover:text-gray-300 text-slate-800"
+          >
             Pricing
           </a>
         </div>
         <div className="flex justify-between gap-8 items-center">
-          <Link to={'/login'} className="text-sm font-bold hover:text-gray-300">
+          <Link to={"/login"} className="text-sm font-bold hover:text-gray-300">
             Sign in
           </Link>
           <a

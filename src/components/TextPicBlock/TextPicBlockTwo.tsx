@@ -3,12 +3,11 @@ import { WordSection } from "./TextPicBlockStyle";
 
 const Block: React.FC = () => {
   return (
-    <section className="h-fit xl:grid xl:place-items-center xl:mt-5 max-w-7xl">
+    <section className="h-fit xl:grid xl:place-items-center xl:mt-5 max-w-7xl p-20">
       <div className="xl:grid grid-cols-2 xl:gap-1">
+        <div></div>
         <WordSection>
-          <h1>
-            <span>Form with engaging interfaces,</span> defying the ordinary.
-          </h1>
+          <h1>defying the ordinary.</h1>
           <p>
             Enhance your data collection efforts by designing forms that not
             only capture signups and feedback but also offer a{" "}
@@ -27,7 +26,6 @@ const Block: React.FC = () => {
             </a>
           </div>
         </WordSection>
-        <div></div>
       </div>
     </section>
   );

@@ -6,10 +6,10 @@ import Block from "../components/TextPicBlock/TextPicBlock";
 
 const Hero: React.FC = () => {
   return (
-    <Root className="xl:px-24">
+    <Root>
       <NavBar />
       <div className="text__part">
-       <Block />
+        <Block />
       </div>
     </Root>
   );
@@ -18,18 +18,17 @@ const Hero: React.FC = () => {
 const Root = styled.div`
   position: relative;
   width: 100%;
-  min-height: 90vh;
   background-image: url(${backgroundIMG});
   background-position: center;
   background-size: cover;
 
-  .text__part{
-    min-height: 60vh;
+  .text__part {
+    min-height: 70vh;
     display: grid;
     place-items: center;
-    @media screen and (max-width: 1400px){
+    /* @media screen and (max-width: 1400px) {
       min-height: 80vh;
-    }
+    } */
   }
 `;
 export default Hero;
